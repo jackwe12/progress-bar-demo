@@ -1,4 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+Please refer to https://jackwe12.github.io/progress-bar-demo/ for demo.
+
 This is a react app followed by following rules:
 
 1. Read data from the endpoint
