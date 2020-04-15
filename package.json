@@ -1,4 +1,4 @@
-{
+{ "homepage":"https://jackwe12.github.io/progress-bar-demo/",
   "name": "progress-bar-demo",
   "version": "0.1.0",
   "private": true,
@@ -19,7 +19,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint src/**/*.js ",
-    "report": "npm run test -- --coverage --watchAll=false"
+    "report": "npm run test -- --coverage --watchAll=false",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -40,6 +42,7 @@
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
     "eslint": "^6.8.0",
-    "eslint-plugin-react": "^7.19.0"
+    "eslint-plugin-react": "^7.19.0",
+    "gh-pages": "^2.2.0"
   }
 }
