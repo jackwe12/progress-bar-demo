@@ -12,8 +12,8 @@ function App() {
 
   useEffect(()=>{
     fetch(`https://pb-api.herokuapp.com/bars`)
-    .then(response=>response.json())    //change the response and store in json form
-    .then(data=>{                //then we can use iterate methods with this json data
+    .then(response=>response.json())    
+    .then(data=>{                
       setBar(data.bars);
       setButtons(data.buttons);
       setLimit(data.limit);
@@ -24,7 +24,7 @@ function App() {
     
     let changedValue = bar[index] + delta;
 
-    if (changedValue > 0 || delta > 0)   //even if bar<0, if click button>0 still can activate button
+    if (changedValue > 0 || delta > 0)   
     {
       setBar([...bar.slice(0, index), bar[index] + delta, ...bar.slice(index+1)])
     }
@@ -39,8 +39,8 @@ function App() {
 
   return (
     <>
-      <h1>Progress Bars Demo</h1>
-      <h2 className='limit'>limit: {limit}</h2>
+      <h1 className='title center'>Progress Bars Demo</h1>
+      <h2 className='limit center'>Limit: {limit}</h2>
       <div className="bar-section">
         {bar.map((barValue, index)=>{
         return(
@@ -53,28 +53,33 @@ function App() {
         })}
 
       </div>
-      <div className='bar-select-button'>
-        <BarSelect
-          current = {current}
-          setCurrent = {setCurrent}
-          bars = {bar}
-        /> 
-      </div>
-      <div className='controlBtn-section'>
-        {buttons.map((buttonValue, index)=>{
-        return(
-          <ControlBtn
-            buttonValue = {buttonValue}
-            index = {index}
-            handleScore = {handleScore}
-            current = {current}
-            key={index}
-          />
-        )
+      <div className='control-section'>
+        <div className='control-section-inside'>
+            <div className='bar-select-button '>
+            <BarSelect
+              current = {current}
+              setCurrent = {setCurrent}
+              bars = {bar}
+            /> 
+          </div>
+          <div className='controlBtn-section '>
+            {buttons.map((buttonValue, index)=>{
+            return(
+              <ControlBtn
+                buttonValue = {buttonValue}
+                index = {index}
+                handleScore = {handleScore}
+                current = {current}
+                key={index}
+              />
+            )
 
-        })}
-
+            })}
+          </div>
+        </div>   
       </div>
+
+
     </>
   );
 }

@@ -2,43 +2,53 @@
 
 exports[`Testing <App/> snapshot testing 1`] = `
 Array [
-  <h1>
+  <h1
+    className="title center"
+  >
     Progress Bars Demo
   </h1>,
   <h2
-    className="limit"
+    className="limit center"
   >
-    limit: 
+    Limit: 
     0
   </h2>,
   <div
     className="bar-section"
   />,
   <div
-    className="bar-select-button"
+    className="control-section"
   >
-    <span>
+    <div
+      className="control-section-inside"
+    >
       <div
-        className="dropdown"
-        onKeyDown={[Function]}
+        className="bar-select-button "
       >
-        <button
-          aria-expanded={false}
-          aria-haspopup={true}
-          className="dropdown-toggle btn btn-success"
-          disabled={false}
-          id="dropdown-basic"
-          onClick={[Function]}
-          type="button"
-        >
-          # Progress
-          1
-        </button>
+        <span>
+          <div
+            className="dropdown"
+            onKeyDown={[Function]}
+          >
+            <button
+              aria-expanded={false}
+              aria-haspopup={true}
+              className="dropdown-toggle btn btn-success"
+              disabled={false}
+              id="dropdown-basic"
+              onClick={[Function]}
+              type="button"
+            >
+              # Progress
+              1
+            </button>
+          </div>
+        </span>
       </div>
-    </span>
+      <div
+        className="controlBtn-section "
+      />
+    </div>
   </div>,
-  <div
-    className="controlBtn-section"
-  />,
 ]
 `;

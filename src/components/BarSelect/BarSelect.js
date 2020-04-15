@@ -1,6 +1,7 @@
 import React from 'react';
 import Dropdown from 'react-bootstrap/Dropdown';
 import PropTypes from 'prop-types';
+import './BarSelect.scss';
 
 const DropButton =({current, setCurrent, bars})=>{
 

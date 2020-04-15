@@ -1,3 +1,62 @@
+.center{
+    margin:auto;
+    width:50%
+}
+.title{
+    font-size: 3rem;
+    margin-top: 3rem;
+}
 .limit{
-    
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+.progress{
+    margin: auto;
+    margin-bottom: 0.5rem;
+}
+.control-section{
+
+    &-inside{
+        margin:auto;
+        width:50%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:500px){
+.title{
+    font-size: 2rem;
+    width: 80%;
+}
+.limit{
+    font-size:1.5rem;
+    width: 80%;
+}
+
+.control-section{
+    .bar-select-button{
+        margin:auto;
+        margin-bottom: 1rem;
+    }
+    .controlBtn-section{
+        margin:auto;
+    }
+    &-inside{
+        width:100%;
+    }
+}
+
+}
+@media screen and (max-width:350px){
+.title{
+    font-size:1.7rem;
+}
+.limit{
+    font-size:1.3rem;
+    width: 80%;
+}
+
 }
