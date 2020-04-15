@@ -10,12 +10,10 @@ const DropButton =({current, setCurrent, bars})=>{
             <Dropdown>
                 <Dropdown.Toggle variant="success" id="dropdown-basic">  
                     # Progress{current + 1}               
-                    {/* show current progress */}
                 </Dropdown.Toggle>
            
                 <Dropdown.Menu>
-                    {/* when hit the progress button switch to the progress you choose */}
-                    {bars.map((bar,index)=>   //takes the second parameter as index
+                    {bars.map((bar,index)=>   
                         <Dropdown.Item  onClick={()=>setCurrent(index)} key={index}> # Progress {index + 1}</Dropdown.Item> 
                     
                     )}
