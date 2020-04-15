@@ -1,0 +1,34 @@
+.progress{
+    width:50%;
+    height:3rem!important;
+    margin-bottom:0.5rem;
+    // justify-content: center;
+    font-size: 1rem!important;
+    position:relative;
+
+}
+.progressBar{
+    display:flex;
+    flex-direction: column;
+    background-color: #007bff;
+}
+.bar-value{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+}
+.danger{
+    background-color: #dc3545!important;
+}
+// .progress-bar{
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     bottom: 0;
+//     right: 0;
+//     z-index: -1;
+//     overflow: hidden;
+// }

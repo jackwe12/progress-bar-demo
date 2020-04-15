@@ -1,9 +1,10 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
+import PropTypes from 'prop-types';
+import './ControlBtn.scss';
 
 
-
-const Btn =({buttonValue, index, handleScore, current, key})=>{
+const Btn =({buttonValue, handleScore, current})=>{
     return(
       
         (buttonValue > 0)
@@ -21,3 +22,12 @@ const Btn =({buttonValue, index, handleScore, current, key})=>{
     );
 }
 export default Btn;
+
+
+
+Btn.propTypes = {
+    buttonValue: PropTypes.array.isRequired,
+    handleScore: PropTypes.func.isRequired,
+    current: PropTypes.number.isRequired,
+
+}

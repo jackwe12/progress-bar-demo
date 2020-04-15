@@ -1,5 +1,6 @@
 import React from 'react';
 import Dropdown from 'react-bootstrap/Dropdown';
+import PropTypes from 'prop-types';
 
 const DropButton =({current, setCurrent, bars})=>{
 
@@ -28,3 +29,9 @@ const DropButton =({current, setCurrent, bars})=>{
 
 export default DropButton;
 
+DropButton.propTypes = {
+    setCurrent: PropTypes.func.isRequired,
+    bars: PropTypes.number.isRequired,
+    current: PropTypes.number.isRequired,
+
+}

@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import Bar from './ProgressBar';
 import BarSelect from './BarSelect';
 import ControlBtn from './ControlBtn';
-
+import './App.scss';
 
 function App() {
   const [bar, setBar] = useState([]);
@@ -40,7 +40,7 @@ function App() {
   return (
     <>
       <h1>Progress Bars Demo</h1>
-      <div className='limit'>limit: {limit}</div>
+      <h2 className='limit'>limit: {limit}</h2>
       <div className="bar-section">
         {bar.map((barValue, index)=>{
         return(

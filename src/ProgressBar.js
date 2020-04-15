@@ -1,36 +1,37 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
-import ProgressBar from 'react-bootstrap/ProgressBar';
-
+import PropTypes from 'prop-types';
+import './ProgressBar.scss';
 const Bar = ({barValue, limit}) =>{
+
 
     return (
         (barValue < limit)
         ?(
             <div className='bar'>
-                <ProgressBar 
-                now={barValue}
-                label={`${barValue}%`}    
-                />
+
+                <div className='progress'>
+                    <div className='bar-value'>{barValue}%</div>
+                    <div className='progressBar' style={{width:`${barValue}%`}}></div>
+                </div>
             </div>
         )
         :(
             <div className='bar'>
-                <ProgressBar 
-                now={barValue}
-                label={`${barValue}%`}    
-                variant='danger'
-                />
+
+                <div className='progress'>
+                    <div className='bar-value'>{barValue}%</div>
+                    <div className='progressBar danger' style={{width:`${barValue}%`}}></div>
+                </div>
             </div>
         )
     );
 
 }
 
-// ProgressBar.propTypes = {
-//     barValue: PropTypes.array.isRequired,
-//     limit: PropTypes.number.isRequired
-// }
+Bar.propTypes = {
+    barValue: PropTypes.array.isRequired,
+    limit: PropTypes.number.isRequired
+}
 
 
 export default Bar;
