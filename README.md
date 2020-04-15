@@ -11,6 +11,11 @@ This is a react app followed by following rules:
 8. Implement a responsive solution for mobile, website and tablet.
 9. Animate the bar change through scss.
 10. Version control (git)
+11. Using Eslint to improve code quality
+12. Using SCSS for CSS preprocessor
+13. Minification for JS & CSS 
+14. Setting up automated tools 
+15. Style it via react-bootstrap as well
 
 ## Available Scripts
 
