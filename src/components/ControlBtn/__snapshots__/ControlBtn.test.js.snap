@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing <ControlBtn/> snapshot testing 1`] = `
+<span>
+  <button
+    className="btn btn-secondary"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  />
+</span>
+`;

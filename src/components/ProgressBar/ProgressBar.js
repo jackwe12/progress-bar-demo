@@ -29,7 +29,7 @@ const Bar = ({barValue, limit}) =>{
 }
 
 Bar.propTypes = {
-    barValue: PropTypes.array.isRequired,
+    barValue: PropTypes.number.isRequired,
     limit: PropTypes.number.isRequired
 }
 

@@ -30,8 +30,8 @@ const DropButton =({current, setCurrent, bars})=>{
 export default DropButton;
 
 DropButton.propTypes = {
-    setCurrent: PropTypes.func.isRequired,
-    bars: PropTypes.number.isRequired,
-    current: PropTypes.number.isRequired,
+    setCurrent: PropTypes.func,
+    bars: PropTypes.array,
+    current: PropTypes.number,
 
 }

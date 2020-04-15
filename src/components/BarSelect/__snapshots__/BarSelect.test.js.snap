@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing <ControlBtn/> snapshot testing 1`] = `
+<span>
+  <div
+    className="dropdown"
+    onKeyDown={[Function]}
+  >
+    <button
+      aria-expanded={false}
+      aria-haspopup={true}
+      className="dropdown-toggle btn btn-success"
+      disabled={false}
+      id="dropdown-basic"
+      onClick={[Function]}
+      type="button"
+    >
+      # Progress
+      1
+    </button>
+  </div>
+</span>
+`;

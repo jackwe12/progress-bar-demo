@@ -26,8 +26,8 @@ export default Btn;
 
 
 Btn.propTypes = {
-    buttonValue: PropTypes.array.isRequired,
-    handleScore: PropTypes.func.isRequired,
-    current: PropTypes.number.isRequired,
+    buttonValue: PropTypes.number,
+    handleScore: PropTypes.func,
+    current: PropTypes.number,
 
 }

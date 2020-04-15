@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
-import Bar from './ProgressBar';
-import BarSelect from './BarSelect';
-import ControlBtn from './ControlBtn';
+import Bar from './components/ProgressBar/ProgressBar';
+import BarSelect from './components/BarSelect/BarSelect';
+import ControlBtn from './components/ControlBtn/ControlBtn';
 import './App.scss';
 
 function App() {

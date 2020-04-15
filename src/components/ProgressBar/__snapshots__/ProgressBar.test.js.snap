@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing <ProgressBar/> snapshot testing 1`] = `
+<div
+  className="bar"
+>
+  <div
+    className="progress"
+  >
+    <div
+      className="bar-value"
+    >
+      100
+      %
+    </div>
+    <div
+      className="progressBar"
+      style={
+        Object {
+          "width": "100%",
+        }
+      }
+    />
+  </div>
+</div>
+`;

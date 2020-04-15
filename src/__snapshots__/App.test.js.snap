@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing <App/> snapshot testing 1`] = `
+Array [
+  <h1>
+    Progress Bars Demo
+  </h1>,
+  <h2
+    className="limit"
+  >
+    limit: 
+    0
+  </h2>,
+  <div
+    className="bar-section"
+  />,
+  <div
+    className="bar-select-button"
+  >
+    <span>
+      <div
+        className="dropdown"
+        onKeyDown={[Function]}
+      >
+        <button
+          aria-expanded={false}
+          aria-haspopup={true}
+          className="dropdown-toggle btn btn-success"
+          disabled={false}
+          id="dropdown-basic"
+          onClick={[Function]}
+          type="button"
+        >
+          # Progress
+          1
+        </button>
+      </div>
+    </span>
+  </div>,
+  <div
+    className="controlBtn-section"
+  />,
+]
+`;
